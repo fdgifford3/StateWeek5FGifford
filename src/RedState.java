@@ -6,7 +6,9 @@ public class RedState implements State {
 	}
 	public void jump() {
 		System.out.println("Checking if jump is legal...");
-		System.out.println("Jumping a black space while moving upward because I am red and unpromoted");
+		System.out.println("Jumping a black piece while moving upward because I am red and unpromoted");
 	}
-	public String print();
+	public void print() {
+		System.out.println("I am a red piece and I am unpromoted");
+	}
 }
