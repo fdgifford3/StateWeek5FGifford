@@ -9,6 +9,6 @@ public class BlackState implements State {
 		System.out.println("Jumping a red piece while moving downward because I am black and unpromoted");
 	}
 	public void print() {
-		System.out.println("I am a black piece and I am unpromoted");
+		System.out.println("This space has an unpromoted black piece");
 	}
 }

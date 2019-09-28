@@ -1,4 +1,4 @@
-
+//Simplified implementation to create spaces and initialize them in certain states
 public class CheckersBoard {
 	Space[][] checkersBoard;
 	
@@ -16,5 +16,13 @@ public class CheckersBoard {
 				}
 			}
 		}
+	}
+	
+	public State getRedState(Space space) {
+		return space.state;
+	}
+	
+	public void setState(State state) {
+		space.state;
 	}
 }
