@@ -13,9 +13,19 @@ public class StateWeek5FGifford {
 	public static void main(String[] args) {
 		System.out.println("Frederick Gifford\nCPSC-60000\nWeek 5 State Pattern\n");
 		
+		System.out.println("\nTesting red piece movement and promotion");
 		Piece piece1 = new Piece("red",3,3);
 		piece1.move(4, 4);
-		
+		piece1.move(5,5);
+		piece1.move(6,6);
+		piece1.move(7,7);
+		piece1.move(6,6);
+		System.out.println("\nTesting black piece movement and promotion");
+		Piece piece2 = new Piece("black",3,3);
+		piece2.move(2, 2);
+		piece2.move(1, 1);
+		piece2.move(0, 0);
+		piece2.move(1, 1);
 
 	}
 

@@ -34,7 +34,8 @@ public class Piece {
 		// check if move is a move or a jump
 		// if move is a jump then run the isJumped() method on the jumped piece
 		// check if in last row, if so, promote
-		state.move();
+		state.move(toRow,toCol);
+
 	}
 	
     public State getState() {
@@ -64,6 +65,19 @@ public class Piece {
 	public void setState(State state) {
 		this.state = state;
 	}
+    public int getRow() {
+    	return this.row;
+    }
+    public int getCol() {
+    	return this.col;
+    }
     
+    public void setRow(int toRow) {
+    	this.row = toRow;
+    }
+    public void setCol(int toCol) {
+    	this.col = toCol;
+    }
+
 }
 

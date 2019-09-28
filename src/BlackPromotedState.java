@@ -5,9 +5,12 @@ public class BlackPromotedState implements State {
 	public BlackPromotedState(Piece piece) {
 		this.piece = piece;
 	}
-	public void move() {
+	public void move(int toRow, int toCol) {
 		System.out.println("Checking if move is legal...");
 		System.out.println("Moving upward or downward because I am black and promoted");
+		//Assume some code to test for legality here
+		piece.setRow(toRow);
+		piece.setRow(toCol);
 	}
 	public void jump() {
 		System.out.println("Checking if jump is legal...");

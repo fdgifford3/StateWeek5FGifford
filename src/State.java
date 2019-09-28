@@ -1,6 +1,6 @@
 
 public interface State {
-	public void move();
+	public void move(int toRow, int toCol);
 	public void jump();
 	public void print();
 	public void promote();
