@@ -19,9 +19,9 @@ public class RedState implements State {
 	
 	public void promote() {
 		System.out.println("Promoting to Red Promoted");
-		
+		piece.setState(piece.getRedPromotedState());
 	}
 	public void isJumped() {
-		piece.setState()
+		piece.setState(piece.getEmptyState());
 	}
 }

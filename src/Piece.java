@@ -14,11 +14,11 @@ public class Piece {
 	public Piece(String type, int row, int col) {
 		this.row = row;
 		this.col = col;
-		redState = new RedState();
-		blackState = new BlackState();
-		redPromotedState = new RedPromotedState();
-		blackPromotedState = new BlackPromotedState();
-		emptyState = new EmptyState();
+		redState = new RedState(this);
+		blackState = new BlackState(this);
+		redPromotedState = new RedPromotedState(this);
+		blackPromotedState = new BlackPromotedState(this);
+		emptyState = new EmptyState(this);
 		
 		if(type.equalsIgnoreCase("red")) {
 			state = redState;
@@ -34,6 +34,7 @@ public class Piece {
 		// check if move is a move or a jump
 		// if move is a jump then run the isJumped() method on the jumped piece
 		// check if in last row, if so, promote
+		state.move();
 	}
 	
     public State getState() {

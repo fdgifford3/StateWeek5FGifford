@@ -13,7 +13,8 @@ public class StateWeek5FGifford {
 	public static void main(String[] args) {
 		System.out.println("Frederick Gifford\nCPSC-60000\nWeek 5 State Pattern\n");
 		
-		CheckersBoard checkersBoard = new CheckersBoard();
+		Piece piece1 = new Piece("red",3,3);
+		piece1.move(4, 4);
 		
 
 	}

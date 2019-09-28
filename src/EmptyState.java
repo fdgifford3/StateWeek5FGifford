@@ -1,5 +1,10 @@
 
 public class EmptyState implements State {
+	Piece piece;
+	
+	public EmptyState(Piece piece) {
+		this.piece = piece;
+	}
 	public void move() {
 		System.out.println("Cannot move, this space is empty");
 	}
@@ -8,5 +13,12 @@ public class EmptyState implements State {
 	}
 	public void print() {
 		System.out.println("This space is empty");
+	}
+	
+	public void promote() {
+		System.out.println("Cannot Promote, this space is empty");
+	}
+	public void isJumped() {
+		System.out.println("Cannot Jump, this space is empty");
 	}
 }
